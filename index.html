@@ -15,15 +15,15 @@
 
     <body>
         <header>
-            <div id="Titre">
+            <div class="Titre Flex">
                 <img src="images/logo/Reservia@3x.png" alt="Logo">
 
 <!-------------------------NAV------------------------------------------->
 
                 <nav>
-                    <ul>
+                    <ul class="Flex">
                         <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
+                        <li><a id="nav_activites" href="#">Activités</a></li>
                         <li><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
@@ -31,30 +31,36 @@
 <!------------------------NAV-------------------------------------------->
 
             </div>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+            <div id="Text_titre">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
             <div id="Recherche">
                 <form action="traitement.php" method="post">
-                    <p><i class="fas fa-map-marker-alt"></i>
-                    <input type="text" name="zone_recherche" value="Marseille, France"> <button name="recherche">Rechercher</button></p>
+                    <p><i class="fas fa-map-marker-alt"></i><input type="text" name="zone_recherche" value="Marseille, France"><button type="button" name="recherche">Rechercher</button></p>
                 </form>
             </div>
 
 <!------------------------FILTRES--------------------------------------->
 
-            <div id="Filtres">
+            <div class="Filtres Flex">
                 <h3>Filtres</h3>
                     <p>
-                        <button name="économique" type="button"><i class="fas fa-money-bill-wave"></i> Économique</button>
-                        <button name="familial" type="button"><i class="fas fa-child"></i> Familial</button>
-                        <button name="romantique" type="button"><i class="fas fa-heart"></i> Romantique</button>
-                        <button name="animaux" type="button"><i class="fas fa-dog"></i> Animaux autorisés</button>
+                        <button id="eco" name="économique" type="button"><i class="fas fa-money-bill-wave"></i> Économique</button>
+                        <button id="fam" name="familial" type="button"><i class="fas fa-child"></i> Familial</button>
+                        <button id="rom" name="romantique" type="button"><i class="fas fa-heart"></i> Romantique</button>
+                        <button id="animaux" name="animaux" type="button"><i class="fas fa-dog"></i> Animaux autorisés</button>
                     </p>
             </div>
 
 <!------------------------Fin FILTRES----------------------------------->
 
-            <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="Flex">
+                <div class="Ico_info Flex">
+                 <i class="fas fa-info"></i>
+                </div> 
+                Plus de 500 logements sont disponibles dans cette ville
+            </div>
         </header>
 
 <!-----------------------Fin HEADER------------------------------------->

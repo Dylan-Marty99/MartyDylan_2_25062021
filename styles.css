@@ -1,14 +1,140 @@
-nav {
-    background-color: aqua; /* couleur temporaire, vraie couleur = white*/
+.Flex {
+    display: flex;
 }
 
-#Filtres {
-    background-color: brown; /* couleur temporaire, vraie couleur = white*/
+a {
+    text-decoration: none;
+    color: inherit;
 }
+ ul{
+    list-style-type: none;
+ }
+
+/*------------HEADER----------------------------*/
+.Titre {
+    height: 40px;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+nav li {
+    padding: 0 25px;
+}
+
+nav a {
+    color: rgb(0, 101, 252);
+    font-size: 1.1em;
+}
+
+nav a:active {
+    background-color: rgb(227, 233, 235);
+    border-bottom: solid 1px rgb(0, 101, 252);
+}
+
+#nav_activites {
+    color: rgb(88, 86, 86);
+}
+
+ul :nth-child(3) {
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+#Text_titre {
+    margin-left: 20px;
+}
+
+/*--------------Barre de recherche--------------*/
 
 #Recherche {
-    background-color: chartreuse; /* couleur temporaire, vraie couleur = white*/
+   margin-left: 20px;
 }
+
+.fa-map-marker-alt {
+    background-color: rgb(242, 242, 242);
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    padding-top: 10px;       /*Trouver uen meilleure solution pour centrer l'icône*/
+    vertical-align: middle;
+    border: rgb(242, 242, 242) solid 0.2px;
+    border-radius: 10px 0 0 10px;
+}
+
+input {
+    height: 33px;
+    width: 150px;
+    border: rgb(242, 242, 242) solid 0.5px;
+}
+
+#Recherche button {
+    width: 90px;
+    height: 35px;
+    color: white;
+    background-color: rgb(0, 101, 252);   /* Ajouter animation au click sur le boutton*/
+    border: rgb(0, 101, 252) solid 1px;
+    border-radius: 0 20px 20px 0;
+}
+
+/*--------------Barre de recherche--------------*/
+/*--------------Filtres------------------------*/
+
+.Filtres {
+    margin-left: 20px;
+    height: 80px;
+}
+                            /*----Continuer les bouttons filtres----*/
+#Filtres h3 {
+    margin-right: 25px;
+    font-size: 1em;
+}
+
+#eco {
+    border: rgb(217, 217 , 217) solid 2px;
+    background-color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: 17px;
+    font-weight: bold;
+}
+
+.fa-money-bill-wave {
+    color: rgb(0, 101, 252);
+   /* background-color: rgb(222, 235, 255);*/
+    height: 40px;
+}
+
+/*--------------Filtres------------------------*/
+
+.Ico_info {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    border: rgb(217, 217 , 217) solid 2px;
+    border-radius: 1rem;
+    margin-right: 10px;
+}
+
+.fa-info {
+    margin: auto;
+    font-size: 0.9em;
+    color: rgb(0, 101, 252);
+}
+
+/*------------HEADER----------------------------*/
+
+/*------------SECTION---------------------------*/
+
+/*------------SECTION---------------------------*/
+
+/*------------FOOTER---------------------------*/
+
+/*------------FOOTER---------------------------*/
+
 
 #Hébergements {
     background-color: cornflowerblue; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
