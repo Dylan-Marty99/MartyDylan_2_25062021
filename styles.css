@@ -1,0 +1,27 @@
+nav {
+    background-color: aqua; /* couleur temporaire, vraie couleur = white*/
+}
+
+#Filtres {
+    background-color: brown; /* couleur temporaire, vraie couleur = white*/
+}
+
+#Recherche {
+    background-color: chartreuse; /* couleur temporaire, vraie couleur = white*/
+}
+
+#Hébergements {
+    background-color: cornflowerblue; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
+}
+
+#Populaires {
+    background-color: darkgreen; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
+}
+
+#Activites {
+    background-color: darkmagenta; /* couleur temporaire, vraie couleur = white*/
+}
+
+footer {
+    background-color: darkorange; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
+}
