@@ -146,26 +146,48 @@ input {
 /*------------HEADER----------------------------*/
 
 /*------------SECTION---------------------------*/
+/*------------Hébergements----------------------*/
 
-/*------------SECTION---------------------------*/
-
-/*------------FOOTER---------------------------*/
-
-/*------------FOOTER---------------------------*/
-
-
-#Hébergements {
-    background-color: cornflowerblue; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
+#Hebergements {
+    background-color: rgb(242, 242, 242);
+    width: 850px;
+    height: 620px;
+    margin-top: 20px;
 }
 
-#Populaires {
+#Hebergements_images {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+#Hebergements h1 {
+    min-width: 850px;
+    height: 30px;
+    padding-left: 30px;
+}
+
+/*------------Hébergements----------------------*/
+/*------------Populaires-----------------------*/
+
+.Populaires {
     background-color: darkgreen; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
 }
+
+/*------------Populaires-----------------------*/
+/*------------Activités-----------------------*/
 
 #Activites {
     background-color: darkmagenta; /* couleur temporaire, vraie couleur = white*/
 }
 
+
+/*------------Activités-----------------------*/
+/*------------SECTION---------------------------*/
+
+/*------------FOOTER---------------------------*/
+
 footer {
     background-color: darkorange; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
 }
+
+/*------------FOOTER---------------------------*/
