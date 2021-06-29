@@ -30,9 +30,10 @@ nav a {
     font-size: 1.1em;
 }
 
-nav a:active {
-    background-color: rgb(227, 233, 235);
-    border-bottom: solid 1px rgb(0, 101, 252);
+nav li a:hover{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 32px;
 }
 
 #nav_activites {
@@ -44,12 +45,12 @@ ul :nth-child(3) {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 1.9em;
     margin: 40px 0 10px 20px;
 }
 
 #Sous_titre {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-left: 20px;
 }
 
@@ -62,7 +63,7 @@ header h1 {
 .fa-map-marker-alt {
     background-color: rgb(242, 242, 242);
     width: 50px;
-    height: 36px;
+    height: 34px;
     text-align: center;
     padding-top: 14px;       /*Trouver uen meilleure solution pour centrer l'icône*/
     vertical-align: middle;
@@ -74,11 +75,13 @@ input {
     width: 180px;
     border: rgb(242, 242, 242) solid 0.5px;
     font-size: 1em;
+    padding: 0;
 }
 
 #Recherche button {
     width: 100px;
-    height: 49px;
+    height: 47px;
+    padding: 0;
     color: white;
     background-color: rgb(0, 101, 252);   /* Ajouter animation au click sur le boutton*/
     border: rgb(0, 101, 252) solid 1px;
@@ -97,27 +100,37 @@ input {
 .Filtres h3 {
     padding: 0 20px;
 }
-                            /*----Corriger les boutons filtres----*/
+                            /*----Rajouter une animation sur boutons filtres----*/
 .bouton {
     border: rgb(217, 217 , 217) solid 2px;
+    border-left: none;
     background-color: white;
-    height: 40px;
+    height: 45px;
     border-radius: 2rem;
     font-weight: bold;
-    margin: 10px;
-    padding: 10px;
+    margin-left: 20px;
+    padding: 0 20px 0 0;
+    padding-left: 0;
+}
+
+button span {
+    padding-left: 10px;
+}
+
+.Boutons_filtres {
+    padding-top: 5px;
 }
 
 .Ico_filtres {
     display: inline-block;
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
+    width: 43px;
+    height: 43px;
     background-color: rgb(222, 235, 255);
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 .Ico {
+    padding-top: 14px;
     color: rgb(0, 101, 252);
 }
 
@@ -150,20 +163,93 @@ input {
 
 #Hebergements {
     background-color: rgb(242, 242, 242);
-    width: 850px;
+    width: 880px;
     height: 620px;
     margin-top: 20px;
+    border-radius: 15px;
 }
 
 #Hebergements_images {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    height: 450px;
+    padding: 25px;
 }
 
 #Hebergements h1 {
-    min-width: 850px;
-    height: 30px;
-    padding-left: 30px;
+    padding: 15px 0 0 30px;
+}
+
+#Image_cannebiere {
+    height: 190px;
+    width: 240px;
+    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
+    background-size: cover;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+#Image_hotelduport {
+    height: 190px;
+    width: 240px;
+    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
+    background-size: cover;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+#Image_lesmouettes {
+    height: 190px;
+    width: 240px;
+    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
+    background-size: cover;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+#Image_hoteldelamer {
+    height: 190px;
+    width: 240px;
+    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
+    background-size: cover;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+#Image_lepanier {
+    height: 190px;
+    width: 240px;
+    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
+    background-size: cover;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+#Image_chezamina {
+    height: 190px;
+    width: 240px;
+    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
+    background-size: 240px 190px;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+.Description_image_hebergements {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 70px;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.Description_image_hebergements p, .Description_image_hebergements h3, .Etoile {
+    margin: 1px 5px;
+}
+
+#Afficher_plus {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 0 20px 30px;
 }
 
 /*------------Hébergements----------------------*/
