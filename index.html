@@ -31,13 +31,11 @@
 <!------------------------NAV-------------------------------------------->
 
             </div>
-            <div id="Text_titre">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <span id="Sous_titre">En plein centre ville ou en pleine nature</span>
             <div id="Recherche">
                 <form action="traitement.php" method="post">
-                    <p><i class="fas fa-map-marker-alt"></i><input type="text" name="zone_recherche" value="Marseille, France"><button type="button" name="recherche">Rechercher</button></p>
+                    <p><i class="fas fa-map-marker-alt"></i><input type="text" name="zone_recherche" value=" Marseille, France"><button type="button" name="recherche">Rechercher</button></p>
                 </form>
             </div>
 
@@ -45,12 +43,24 @@
 
             <div class="Filtres Flex">
                 <h3>Filtres</h3>
-                    <p>
-                        <button id="eco" name="économique" type="button"><i class="fas fa-money-bill-wave"></i> Économique</button>
-                        <button id="fam" name="familial" type="button"><i class="fas fa-child"></i> Familial</button>
-                        <button id="rom" name="romantique" type="button"><i class="fas fa-heart"></i> Romantique</button>
-                        <button id="animaux" name="animaux" type="button"><i class="fas fa-dog"></i> Animaux autorisés</button>
-                    </p>
+                    <div class="Boutons_filtres Flex">
+                        <button class="eco bouton" name="économique" type="button">
+                            <div class="Ico_filtres">
+                                <i class="fas fa-money-bill-wave Ico"></i>
+                            </div> Économique</button>
+                        <button class="fam bouton" name="familial" type="button">
+                            <div class="Ico_filtres">
+                                <i class="fas fa-child Ico"></i>
+                            </div> Familial</button>
+                        <button class="rom bouton" name="romantique" type="button">
+                            <div class="Ico_filtres">
+                                <i class="fas fa-heart Ico"></i>
+                            </div> Romantique</button>
+                        <button class="animaux bouton" name="animaux" type="button">
+                            <div class="Ico_filtres">
+                                <i class="fas fa-dog Ico"></i>
+                            </div> Animaux autorisés</button>
+                    </div>
             </div>
 
 <!------------------------Fin FILTRES----------------------------------->
@@ -59,7 +69,7 @@
                 <div class="Ico_info Flex">
                  <i class="fas fa-info"></i>
                 </div> 
-                Plus de 500 logements sont disponibles dans cette ville
+                <span id="Info">Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
         </header>
 

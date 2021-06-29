@@ -2,11 +2,15 @@
     display: flex;
 }
 
+body {
+    margin: 0 50px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
- ul{
+ ul {
     list-style-type: none;
  }
 
@@ -40,11 +44,12 @@ ul :nth-child(3) {
 }
 
 header h1 {
-    font-size: 1.5em;
-    margin-top: 40px;
+    font-size: 2em;
+    margin: 40px 0 10px 20px;
 }
 
-#Text_titre {
+#Sous_titre {
+    font-size: 1.2em;
     margin-left: 20px;
 }
 
@@ -56,24 +61,24 @@ header h1 {
 
 .fa-map-marker-alt {
     background-color: rgb(242, 242, 242);
-    width: 30px;
-    height: 25px;
+    width: 50px;
+    height: 36px;
     text-align: center;
-    padding-top: 10px;       /*Trouver uen meilleure solution pour centrer l'icône*/
+    padding-top: 14px;       /*Trouver uen meilleure solution pour centrer l'icône*/
     vertical-align: middle;
-    border: rgb(242, 242, 242) solid 0.2px;
     border-radius: 10px 0 0 10px;
 }
 
 input {
-    height: 33px;
-    width: 150px;
+    height: 45px;
+    width: 180px;
     border: rgb(242, 242, 242) solid 0.5px;
+    font-size: 1em;
 }
 
 #Recherche button {
-    width: 90px;
-    height: 35px;
+    width: 100px;
+    height: 49px;
     color: white;
     background-color: rgb(0, 101, 252);   /* Ajouter animation au click sur le boutton*/
     border: rgb(0, 101, 252) solid 1px;
@@ -84,28 +89,36 @@ input {
 /*--------------Filtres------------------------*/
 
 .Filtres {
-    margin-left: 20px;
-    height: 80px;
-}
-                            /*----Continuer les bouttons filtres----*/
-#Filtres h3 {
-    margin-right: 25px;
+    height: 50px;
     font-size: 1em;
+    margin-bottom: 10px;
 }
 
-#eco {
+.Filtres h3 {
+    padding: 0 20px;
+}
+                            /*----Corriger les boutons filtres----*/
+.bouton {
     border: rgb(217, 217 , 217) solid 2px;
     background-color: white;
     height: 40px;
-    width: 130px;
-    border-radius: 17px;
+    border-radius: 2rem;
     font-weight: bold;
+    margin: 10px;
+    padding: 10px;
 }
 
-.fa-money-bill-wave {
-    color: rgb(0, 101, 252);
-   /* background-color: rgb(222, 235, 255);*/
+.Ico_filtres {
+    display: inline-block;
+    margin-right: 10px;
+    width: 40px;
     height: 40px;
+    background-color: rgb(222, 235, 255);
+    border-radius: 1rem;
+}
+
+.Ico {
+    color: rgb(0, 101, 252);
 }
 
 /*--------------Filtres------------------------*/
@@ -121,8 +134,13 @@ input {
 
 .fa-info {
     margin: auto;
-    font-size: 0.9em;
+    font-size: 0.7em;
     color: rgb(0, 101, 252);
+}
+
+#Info {
+    font-size: 1.1em;
+    margin-top: 2px;
 }
 
 /*------------HEADER----------------------------*/
