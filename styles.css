@@ -163,6 +163,9 @@ button span {
 /*------------HEADER----------------------------*/
 
 /*------------SECTION---------------------------*/
+section {
+    flex-wrap: wrap;
+}
 /*------------Hébergements----------------------*/
 
 #Hebergements {
@@ -249,7 +252,7 @@ button span {
     font-size: 0.9em;
 }
 
-.Description_image_hebergements p, .Description_image_hebergements h3, .Etoile {
+.Description_image_hebergements p, .Description_image_hebergements h3, .Etoile_hebergements {
     margin: 1px 5px;
 }
 
@@ -267,7 +270,7 @@ button span {
     font-weight: bold;
 }
 
-.Etoile {
+.Etoile_hebergements {
     padding-top: 2px;
     font-size: 0.8em;
 }
@@ -284,15 +287,88 @@ button span {
 /*------------Populaires-----------------------*/
 
 #Populaires {
-    background-color: darkgreen; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
+    background-color: rgb(242, 242, 242); 
+    width: 420px;
+    height: 620px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 15px;
 }
+
+.fa-chart-line {
+    padding-top: 25px;
+}
+
+.Ico_populaires {
+    justify-content: space-around;
+}
+
+.Populaires_images {
+    flex-direction: column;
+    align-items: center;
+}
+
+.Image_soleildumatin {
+    background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
+    background-size: 190px 140px;
+    height: 140px;
+    width: 340px;
+    margin-bottom: 30px;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+.Image_chambreshotes {
+    background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
+    background-size: 150px 140px;
+    height: 140px;
+    width: 340px;
+    margin-bottom: 30px;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+.Image_bleuetblanc {
+    background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
+    background-size: 140px 140px;
+    height: 140px;
+    width: 340px;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+.Description_image_populaires {
+    background-color: white;
+    width: 190px;
+    height: 135px;
+    margin-left: 130px;
+    padding: 5px 0 0 20px;
+    border-radius: 0 10px 10px 0;
+    font-size: 0.9em;
+}
+
+.Description_image_populaires h3, .Description_image_populaires p {
+    width: 150px;
+    margin: 0 0 6px 0;
+}
+
+.Etoile_populaires {
+    padding-top: 40px;
+    font-size: 0.8em;
+}
+
+
+
+
 
 /*------------Populaires-----------------------*/
 /*------------Activités-----------------------*/
 
 #Activites {
+    width: 100%;
     background-color: darkmagenta; /* couleur temporaire, vraie couleur = white*/
 }
+
 
 
 /*------------Activités-----------------------*/
