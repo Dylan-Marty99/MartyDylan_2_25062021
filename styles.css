@@ -14,6 +14,10 @@ a {
     list-style-type: none;
  }
 
+ .Shadow {
+     box-shadow: 0 0 10px rgb(209, 205, 205);
+ }
+
 /*------------HEADER----------------------------*/
 .Titre {
     height: 40px;
@@ -179,57 +183,57 @@ button span {
 #Hebergements h1 {
     padding: 15px 0 0 30px;
 }
-
-#Image_cannebiere {
+            /*Ajouter une animation au survol une foisla page finaliser*/
+.Image_cannebiere {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
-    background-size: cover;
+    background-size: contain;
     border: white solid 4px;
     border-radius: 20px;
 }
 
-#Image_hotelduport {
+.Image_hotelduport {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
-    background-size: cover;
+    background-size: 100% 75%;
     border: white solid 4px;
     border-radius: 20px;
 }
 
-#Image_lesmouettes {
+.Image_lesmouettes {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
-    background-size: cover;
+    background-size: 100% 65%;
     border: white solid 4px;
     border-radius: 20px;
 }
 
-#Image_hoteldelamer {
+.Image_hoteldelamer {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
-    background-size: cover;
+    background-size: 100% 80%;
     border: white solid 4px;
     border-radius: 20px;
 }
 
-#Image_lepanier {
+.Image_lepanier {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
-    background-size: cover;
+    background-size: contain;
     border: white solid 4px;
     border-radius: 20px;
 }
 
-#Image_chezamina {
+.Image_chezamina {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
-    background-size: 240px 190px;
+    background-size: 100% 90%;
     border: white solid 4px;
     border-radius: 20px;
 }
@@ -239,7 +243,10 @@ button span {
     justify-content: flex-end;
     height: 70px;
     background-color: white;
-    padding: 5px 10px;
+    padding: 0 10px 5px 5px;
+    margin-top: 115px;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.9em;
 }
 
 .Description_image_hebergements p, .Description_image_hebergements h3, .Etoile {
@@ -252,10 +259,31 @@ button span {
     padding: 0 0 20px 30px;
 }
 
+#Hebergements h3 {
+    padding-bottom: 5px;
+}
+
+.euro {
+    font-weight: bold;
+}
+
+.Etoile {
+    padding-top: 2px;
+    font-size: 0.8em;
+}
+
+.Etoile_bleu {
+    color: rgb(0, 101, 252);
+}
+
+.Etoile_grise {
+    color: rgb(217, 217, 217);
+}
+
 /*------------Hébergements----------------------*/
 /*------------Populaires-----------------------*/
 
-.Populaires {
+#Populaires {
     background-color: darkgreen; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
 }
 
