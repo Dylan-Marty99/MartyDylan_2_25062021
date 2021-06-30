@@ -4,6 +4,7 @@
 
 body {
     margin: 0 50px;
+    font-family : 'Open Sans', sans-serif ;
 }
 
 a {
@@ -31,7 +32,7 @@ nav li {
 
 nav a {
     color: rgb(0, 101, 252);
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 nav li a:hover{
@@ -49,12 +50,12 @@ ul :nth-child(3) {
 }
 
 header h1 {
-    font-size: 1.9em;
+    font-size: 1.7em;
     margin: 40px 0 10px 20px;
 }
 
 #Sous_titre {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 20px;
 }
 
@@ -79,7 +80,7 @@ input {
     width: 180px;
     border: rgb(242, 242, 242) solid 0.5px;
     font-size: 1em;
-    padding: 0;
+    padding: 0 0 0 5px;
 }
 
 #Recherche button {
@@ -97,7 +98,7 @@ input {
 
 .Filtres {
     height: 50px;
-    font-size: 1em;
+    font-size: 0.9em;
     margin-bottom: 10px;
 }
 
@@ -156,8 +157,8 @@ button span {
 }
 
 #Info {
-    font-size: 1.1em;
-    margin-top: 2px;
+    font-size: 1em;
+    margin-top: 4px;
 }
 
 /*------------HEADER----------------------------*/
@@ -180,13 +181,14 @@ section {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     height: 450px;
-    padding: 25px;
+    padding: 10px 25px 30px 25px;
 }
 
 #Hebergements h1 {
     padding: 15px 0 0 30px;
+    font-size: 1.3em;
 }
-            /*Ajouter une animation au survol une foisla page finaliser*/
+            /*Ajouter une animation au survol une fois la page finalisée*/
 .Image_cannebiere {
     height: 190px;
     width: 240px;
@@ -246,24 +248,26 @@ section {
     justify-content: flex-end;
     height: 70px;
     background-color: white;
-    padding: 0 10px 5px 5px;
+    padding: 0 0 5px 5px;
     margin-top: 115px;
     border-radius: 0 0 10px 10px;
     font-size: 0.9em;
 }
 
-.Description_image_hebergements p, .Description_image_hebergements h3, .Etoile_hebergements {
-    margin: 1px 5px;
+.Description_image_hebergements p {
+    margin: 0 0 1px 5px;
+    font-size: 0.9em;
 }
 
 #Afficher_plus {
     font-weight: bold;
-    font-size: 1.1em;
-    padding: 0 0 20px 30px;
+    font-size: 1em;
+    padding: 0 0 0 30px;
 }
 
 #Hebergements h3 {
-    padding-bottom: 5px;
+    margin: 0 0 10px 5px;
+    font-size: 1em;
 }
 
 .euro {
@@ -271,7 +275,7 @@ section {
 }
 
 .Etoile_hebergements {
-    padding-top: 2px;
+    margin: 5px 0 0 5px;
     font-size: 0.8em;
 }
 
@@ -296,18 +300,23 @@ section {
 }
 
 .fa-chart-line {
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 .Ico_populaires {
     justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.Ico_populaires h1 {
+    font-size: 1.3em;
 }
 
 .Populaires_images {
     flex-direction: column;
     align-items: center;
 }
-
+            /*Ajouter une animation au survol une fois la page finalisée*/
 .Image_soleildumatin {
     background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
     background-size: 190px 140px;
@@ -347,19 +356,23 @@ section {
     font-size: 0.9em;
 }
 
+.Description_image_populaires h3 {
+    font-size: 1em;
+}
+
+.Description_image_populaires p {
+    font-size: 0.9em;
+}
+
 .Description_image_populaires h3, .Description_image_populaires p {
     width: 150px;
     margin: 0 0 6px 0;
 }
 
 .Etoile_populaires {
-    padding-top: 40px;
+    padding-top: 45px;
     font-size: 0.8em;
 }
-
-
-
-
 
 /*------------Populaires-----------------------*/
 /*------------Activités-----------------------*/
