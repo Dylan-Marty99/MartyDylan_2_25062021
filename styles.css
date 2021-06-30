@@ -2,8 +2,9 @@
     display: flex;
 }
 
-body {
-    margin: 0 50px;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
     font-family : 'Open Sans', sans-serif ;
 }
 
@@ -20,7 +21,7 @@ a {
  }
 
 /*------------HEADER----------------------------*/
-.Titre {
+.Logo_reservia {
     height: 40px;
     justify-content: space-between;
     margin: 20px;
@@ -105,8 +106,12 @@ input {
 .Filtres h3 {
     padding: 0 20px;
 }
+
+.Filtres_allBoutons {
+    padding-top: 5px;
+}
                             /*----Rajouter une animation sur boutons filtres----*/
-.bouton {
+.Filtres_allBoutons-bouton {
     border: rgb(217, 217 , 217) solid 2px;
     border-left: none;
     background-color: white;
@@ -122,11 +127,7 @@ button span {
     padding-left: 10px;
 }
 
-.Boutons_filtres {
-    padding-top: 5px;
-}
-
-.Ico_filtres {
+.Filtres_allBoutons-ico {
     display: inline-block;
     width: 43px;
     height: 43px;
@@ -152,7 +153,7 @@ button span {
 
 .fa-info {
     margin: auto;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: rgb(0, 101, 252);
 }
 
@@ -177,6 +178,11 @@ section {
     border-radius: 15px;
 }
 
+#Hebergements h1 {
+    padding: 15px 0 0 30px;
+    font-size: 1.3em;
+}
+
 #Hebergements_images {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -184,12 +190,8 @@ section {
     padding: 10px 25px 30px 25px;
 }
 
-#Hebergements h1 {
-    padding: 15px 0 0 30px;
-    font-size: 1.3em;
-}
             /*Ajouter une animation au survol une fois la page finalisée*/
-.Image_cannebiere {
+.Hebergements_image_cannebiere {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
@@ -198,7 +200,7 @@ section {
     border-radius: 20px;
 }
 
-.Image_hotelduport {
+.Hebergements_image_hotelduport {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
@@ -207,7 +209,7 @@ section {
     border-radius: 20px;
 }
 
-.Image_lesmouettes {
+.Hebergements_image_lesmouettes {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
@@ -216,7 +218,7 @@ section {
     border-radius: 20px;
 }
 
-.Image_hoteldelamer {
+.Hebergements_image_hoteldelamer {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
@@ -225,7 +227,7 @@ section {
     border-radius: 20px;
 }
 
-.Image_lepanier {
+.Hebergements_image_lepanier {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
@@ -234,7 +236,7 @@ section {
     border-radius: 20px;
 }
 
-.Image_chezamina {
+.Hebergements_image_chezamina {
     height: 190px;
     width: 240px;
     background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
@@ -243,7 +245,7 @@ section {
     border-radius: 20px;
 }
 
-.Description_image_hebergements {
+.Hebergements_image_description {
     flex-direction: column;
     justify-content: flex-end;
     height: 70px;
@@ -254,20 +256,14 @@ section {
     font-size: 0.9em;
 }
 
-.Description_image_hebergements p {
-    margin: 0 0 1px 5px;
-    font-size: 0.9em;
-}
-
-#Afficher_plus {
-    font-weight: bold;
-    font-size: 1em;
-    padding: 0 0 0 30px;
-}
-
 #Hebergements h3 {
     margin: 0 0 10px 5px;
     font-size: 1em;
+}
+
+.Hebergements_image_description p {
+    margin: 0 0 1px 5px;
+    font-size: 0.9em;
 }
 
 .euro {
@@ -287,6 +283,12 @@ section {
     color: rgb(217, 217, 217);
 }
 
+#Afficher_plus {
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0 0 0 30px;
+}
+
 /*------------Hébergements----------------------*/
 /*------------Populaires-----------------------*/
 
@@ -299,17 +301,17 @@ section {
     border-radius: 15px;
 }
 
-.fa-chart-line {
-    padding-top: 20px;
-}
-
-.Ico_populaires {
+.Populaires-ico {
     justify-content: space-around;
     margin-bottom: 10px;
 }
 
-.Ico_populaires h1 {
+.Populaires-ico h1 {
     font-size: 1.3em;
+}
+
+.fa-chart-line {
+    padding-top: 20px;
 }
 
 .Populaires_images {
@@ -317,7 +319,7 @@ section {
     align-items: center;
 }
             /*Ajouter une animation au survol une fois la page finalisée*/
-.Image_soleildumatin {
+.Populaires_image_soleildumatin {
     background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
     background-size: 190px 140px;
     height: 140px;
@@ -327,7 +329,7 @@ section {
     border-radius: 20px;
 }
 
-.Image_chambreshotes {
+.Populaires_image_chambreshotes {
     background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
     background-size: 150px 140px;
     height: 140px;
@@ -337,7 +339,7 @@ section {
     border-radius: 20px;
 }
 
-.Image_bleuetblanc {
+.Populaires_image_bleuetblanc {
     background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
     background-size: 140px 140px;
     height: 140px;
@@ -346,7 +348,7 @@ section {
     border-radius: 20px;
 }
 
-.Description_image_populaires {
+.Populaires_image_description {
     background-color: white;
     width: 190px;
     height: 135px;
@@ -356,17 +358,17 @@ section {
     font-size: 0.9em;
 }
 
-.Description_image_populaires h3 {
+.Populaires_image_description h3, .Populaires_image_description p {
+    width: 150px;
+    margin: 0 0 6px 0;
+}
+
+.Populaires_image_description h3 {
     font-size: 1em;
 }
 
-.Description_image_populaires p {
+.Populaires_image_description p {
     font-size: 0.9em;
-}
-
-.Description_image_populaires h3, .Description_image_populaires p {
-    width: 150px;
-    margin: 0 0 6px 0;
 }
 
 .Etoile_populaires {
@@ -379,10 +381,47 @@ section {
 
 #Activites {
     width: 100%;
-    background-color: darkmagenta; /* couleur temporaire, vraie couleur = white*/
+    margin-top: 30px;
 }
 
+#Activites h1 {
+    font-size: 1.3em;
+}
 
+#Activites_image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#Activites_image_vieuxport {
+    background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
+
+}
+
+#Activites_image_fort {
+    background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
+
+}
+
+#Activites_image_frioul {
+    background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat;
+
+}
+
+#Activites_image_calanques {
+    background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
+
+}
+
+#Activites_image_notredame {
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat;
+
+}
+
+#Activites_image_longchamp {
+    background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
+
+}
 
 /*------------Activités-----------------------*/
 /*------------SECTION---------------------------*/

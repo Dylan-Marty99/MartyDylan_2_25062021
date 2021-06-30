@@ -17,8 +17,9 @@
 <!-------------------------Début HEADER---------------------------------->
 
     <body>
+    <div class="container">
         <header>
-            <div class="Titre Flex">
+            <div class="Logo_reservia Flex">
                 <img src="images/logo/Reservia@3x.png" alt="Logo">
 
 <!-------------------------NAV------------------------------------------->
@@ -46,29 +47,29 @@
 
             <div class="Filtres Flex">
                 <h3>Filtres</h3>
-                    <div class="Boutons_filtres Flex">
-                        <button class="eco bouton" name="économique" type="button">
-                            <div class="Ico_filtres">
+                    <div class="Filtres_allBoutons Flex">
+                        <button class="Filtres_allBoutons-bouton" name="économique" type="button">
+                            <div class="Filtres_allBoutons-ico">
                                 <i class="fas fa-money-bill-wave Ico"></i>
                             </div>
                             <span> Économique</span>
                         </button>
 
-                        <button class="fam bouton" name="familial" type="button">
-                            <div class="Ico_filtres">
+                        <button class="Filtres_allBoutons-bouton" name="familial" type="button">
+                            <div class="Filtres_allBoutons-ico">
                                 <i class="fas fa-child Ico"></i>
                             </div> 
                             <span>Familial</span>
                         </button>
 
-                        <button class="rom bouton" name="romantique" type="button">
-                            <div class="Ico_filtres">
+                        <button class="Filtres_allBoutons-bouton" name="romantique" type="button">
+                            <div class="Filtres_allBoutons-ico">
                                 <i class="fas fa-heart Ico"></i>
                             </div> 
                             <span>Romantique</span>
                         </button>
-                        <button class="animaux bouton" name="animaux" type="button">
-                            <div class="Ico_filtres">
+                        <button class="Filtres_allBoutons-bouton" name="animaux" type="button">
+                            <div class="Filtres_allBoutons-ico">
                                 <i class="fas fa-dog Ico"></i>
                             </div> 
                             <span>Animaux autorisés</span>
@@ -96,8 +97,8 @@
                 <h1>Hébergements à Marseille</h1>
             <div id="Hebergements_images">
                 <a href="#">
-                    <div class="Image_cannebiere Shadow">
-                        <div class="Description_image_hebergements Flex">
+                    <div class="Hebergements_image_cannebiere Shadow">
+                        <div class="Hebergements_image_description Flex">
                             <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <span class="euro">25€</span></p>
                             <div class="Etoile_hebergements">
@@ -111,8 +112,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Image_hotelduport Shadow">
-                        <div class="Description_image_hebergements Flex">
+                    <div class="Hebergements_image_hotelduport Shadow">
+                        <div class="Hebergements_image_description Flex">
                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de 52<span class="euro">€</span></p>
                             <div class="Etoile_hebergements">
@@ -126,8 +127,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Image_lesmouettes Shadow">
-                        <div class="Description_image_hebergements Flex">
+                    <div class="Hebergements_image_lesmouettes Shadow">
+                        <div class="Hebergements_image_description Flex">
                             <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de 76<span class="euro">€</span></p>
                             <div class="Etoile_hebergements">
@@ -141,8 +142,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Image_hoteldelamer Shadow">
-                        <div class="Description_image_hebergements Flex">
+                    <div class="Hebergements_image_hoteldelamer Shadow">
+                        <div class="Hebergements_image_description Flex">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 46<span class="euro">€</span></p>
                             <div class="Etoile_hebergements">
@@ -156,8 +157,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Image_lepanier Shadow">
-                        <div class="Description_image_hebergements Flex">
+                    <div class="Hebergements_image_lepanier Shadow">
+                        <div class="Hebergements_image_description Flex">
                             <h3>Auberge Le Panier</h3>
                             <p>Nuit à partir de <span class="euro">23€</span></p>
                             <div class="Etoile_hebergements">
@@ -171,8 +172,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Image_chezamina Shadow">
-                        <div class="Description_image_hebergements Flex">
+                    <div class="Hebergements_image_chezamina Shadow">
+                        <div class="Hebergements_image_description Flex">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96<span class="euro">€</span></p>
                             <div class="Etoile_hebergements">
@@ -193,14 +194,14 @@
 <!-------------------------Début populaires----------------------------->
 
             <div id="Populaires">
-                <div class="Ico_populaires Flex">
+                <div class="Populaires-ico Flex">
                     <h1>Les plus populaires</h1>
                     <i class="fas fa-chart-line"></i>
                 </div>
             <div class="Populaires_images Flex">
                 <a href="#">
-                    <div class="Image_soleildumatin Shadow">
-                        <div class="Description_image_populaires">
+                    <div class="Populaires_image_soleildumatin Shadow">
+                        <div class="Populaires_image_description">
                             <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de 128<span class="euro">€</span></p>
                             <div class="Etoile_populaires">
@@ -214,8 +215,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Image_chambreshotes Shadow">
-                        <div class="Description_image_populaires">
+                    <div class="Populaires_image_chambreshotes Shadow">
+                        <div class="Populaires_image_description">
                             <h3>Au cœur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de 71<span class="euro">€</span></p>
                             <div class="Etoile_populaires">
@@ -229,8 +230,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Image_bleuetblanc Shadow">
-                        <div class="Description_image_populaires">
+                    <div class="Populaires_image_bleuetblanc Shadow">
+                        <div class="Populaires_image_description">
                             <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de 68<span class="euro">€</span></p>
                             <div class="Etoile_populaires">
@@ -253,33 +254,33 @@
                 <h1>Activités à Marseille</h1>
             <div id="Activites_image">
                 <a href="#">
-                    <div id="Image_vieuxport">
-                        <h3 class="Description_image_activites">Vieux Port</h3>
+                    <div id="Activites_image_vieuxport">
+                        <h3 class="Activites_image_description">Vieux Port</h3>
                     </div>
                 </a>
                 <a href="#">
-                    <div id="Image_fort">
-                        <h3 class="Description_image_activites">Fort de Pomègues</h3>
+                    <div id="Activites_image_fort">
+                        <h3 class="Activites_image_description">Fort de Pomègues</h3>
                     </div>
                 </a>
                 <a href="#">
-                    <div id="Image_frioul">
-                        <h3 class="Description_image_activites">Îles du Frioul</h3>
+                    <div id="Activites_image_frioul">
+                        <h3 class="Activites_image_description">Îles du Frioul</h3>
                     </div>
                 </a>
                 <a href="#">
-                    <div id="Image_calanques">
-                        <h3 class="Description_image_activites">Parc National des Calanques</h3>
+                    <div id="Activites_image_calanques">
+                        <h3 class="Activites_image_description">Parc National des Calanques</h3>
                     </div>
                 </a>
                 <a href="#">
-                    <div id="Image_notredame">
-                        <h3 class="Description_image_activites">Notre-Dame-de-la-Garde</h3>
+                    <div id="Activites_image_notredame">
+                        <h3 class="Activites_image_description">Notre-Dame-de-la-Garde</h3>
                     </div>
                 </a>
                 <a href="#">
-                    <div id="Image_longchamp">
-                        <h3 class="Description_image_activites">Parc Longchamp</h3>
+                    <div id="Activites_image_longchamp">
+                        <h3 class="Activites_image_description">Parc Longchamp</h3>
                     </div>
                 </a>
             </div>
@@ -303,6 +304,7 @@
                 <p><a href="#">Centre d'aide</a><br>
                 <a href="#">Nous contacter</a></p>
         </footer>
+    </div>
     </body>
 <!----------------Fin FOOTER---------------------------------------->
 <!----------------Fin BODY------------------------------------------>
