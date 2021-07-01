@@ -20,6 +20,10 @@ a {
      box-shadow: 0 0 10px rgb(209, 205, 205);
  }
 
+ .Shadow:hover {
+     color: rgb(0, 101, 252);
+ }
+
 /*------------HEADER----------------------------*/
 .Logo_reservia {
     height: 40px;
@@ -89,9 +93,14 @@ input {
     height: 47px;
     padding: 0;
     color: white;
-    background-color: rgb(0, 101, 252);   /*--Ajouter animation au click sur le boutton--*/
+    background-color: rgb(0, 101, 252);  
     border: rgb(0, 101, 252) solid 1px;
     border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+#Recherche button:active {
+    background-color: rgb(2, 71, 175);
 }
 
 /*--------------Barre de recherche--------------*/
@@ -110,7 +119,7 @@ input {
 .Filtres_allBoutons {
     padding-top: 5px;
 }
-                            /*----Rajouter une animation sur boutons filtres----*/
+                            
 .Filtres_allBoutons-bouton {
     border: rgb(217, 217 , 217) solid 2px;
     border-left: none;
@@ -120,7 +129,19 @@ input {
     font-weight: bold;
     margin-left: 20px;
     padding: 0 20px 0 0;
-    padding-left: 0;
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.Filtres_allBoutons-bouton:hover{
+    transform: scale(1.10);
+}
+
+.Filtres_allBoutons-bouton:active {
+    color: white;
+    background-color: rgb(0, 101, 252);
 }
 
 button span {
@@ -190,7 +211,11 @@ section {
     padding: 10px 25px 30px 25px;
 }
 
-            /*--Ajouter une animation au survol une fois la page finalisée--*/
+#Hebergements_images a {
+    height: 200px;
+    width: 250px;
+}
+
 .Hebergements_image_cannebiere {
     height: 190px;
     width: 240px;
@@ -289,6 +314,10 @@ section {
     padding: 0 0 0 30px;
 }
 
+#Afficher_plus:hover {
+    text-decoration: underline;
+}
+
 /*------------Hébergements----------------------*/
 /*------------Populaires-----------------------*/
 
@@ -318,7 +347,12 @@ section {
     flex-direction: column;
     align-items: center;
 }
-            /*--Ajouter une animation au survol une fois la page finalisée--*/
+
+.Populaires_images a {
+    height: 140px;
+    margin-bottom: 30px;
+}
+        
 .Populaires_image_soleildumatin {
     background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
     background-size: 190px 140px;
@@ -397,6 +431,10 @@ section {
     grid-template-rows: 1fr 1fr;
 }
 
+#Activites_image a {
+    width: 300px;
+}
+
 #Activites_image_lien-vieuxport {
     grid-column: 1;
     grid-row: 1 / 2;
@@ -412,7 +450,7 @@ section {
 #Activites_image_lien-frioul {
     grid-column: 2;
     grid-row: 1;
-    padding-top: 270px;
+    margin-top: 270px;
 }
 
 #Activites_image_lien-calanques {
@@ -430,7 +468,7 @@ section {
     grid-column: 4;
     grid-row: 1;
     height: 210px;
-    padding-top: 230px;
+    margin-top: 230px;
 }
 
 .Activites_image_vieuxport {
@@ -514,5 +552,9 @@ footer {
 .Footer_lien {
     display: block;
     margin: 15px 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 /*------------FOOTER---------------------------*/
