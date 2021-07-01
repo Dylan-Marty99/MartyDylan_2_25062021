@@ -217,55 +217,38 @@ section {
 }
 
 .Hebergements_image_cannebiere {
-    height: 190px;
-    width: 240px;
     background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
     background-size: contain;
-    border: white solid 4px;
-    border-radius: 20px;
 }
 
 .Hebergements_image_hotelduport {
-    height: 190px;
-    width: 240px;
     background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
     background-size: 100% 75%;
-    border: white solid 4px;
-    border-radius: 20px;
 }
 
 .Hebergements_image_lesmouettes {
-    height: 190px;
-    width: 240px;
     background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
     background-size: 100% 65%;
-    border: white solid 4px;
-    border-radius: 20px;
 }
 
 .Hebergements_image_hoteldelamer {
-    height: 190px;
-    width: 240px;
     background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
     background-size: 100% 80%;
-    border: white solid 4px;
-    border-radius: 20px;
 }
 
 .Hebergements_image_lepanier {
-    height: 190px;
-    width: 240px;
     background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
     background-size: contain;
-    border: white solid 4px;
-    border-radius: 20px;
 }
 
 .Hebergements_image_chezamina {
-    height: 190px;
-    width: 240px;
     background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
     background-size: 100% 90%;
+}
+
+.Size-Border {
+    height: 190px;
+    width: 240px;
     border: white solid 4px;
     border-radius: 20px;
 }
