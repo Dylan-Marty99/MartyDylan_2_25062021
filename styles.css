@@ -303,7 +303,7 @@ section {
 
 .Populaires-ico {
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .Populaires-ico h1 {
@@ -386,7 +386,7 @@ section {
 
 #Activites h1 {
     font-size: 1.3em;
-    margin: 0 0 10px 10px;
+    margin: 0 0 20px 10px;
 }
 
 #Activites_image {
@@ -481,13 +481,38 @@ section {
     border-radius: 20px;
 }
 
+.Activites_image_description {
+    height: 55px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    margin: 0;
+    font-size: 1em;
+}
+
+
 /*------------Activités-----------------------*/
 /*------------SECTION---------------------------*/
 
 /*------------FOOTER---------------------------*/
 
 footer {
-    background-color: darkorange; /* couleur temporaire, vraie couleur = rgb (242, 242, 242)*/
+    background-color: rgb(242, 242, 242);
+    height: 200px;
+    margin-top: 30px;
 }
 
+.Footer_contenu {
+    height: 150px;
+    margin: 30px 200px 10px 40px;
+}
+
+.Footer_contenu h2 {
+    font-size: 1em;
+    padding-bottom: 5px
+}
+
+.Footer_lien {
+    display: block;
+    margin: 15px 0;
+}
 /*------------FOOTER---------------------------*/
