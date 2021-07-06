@@ -5,7 +5,7 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    font-family : 'Releway', sans-serif ; /*--Police ne fonctionne pas--*/
+    font-family: 'Raleway', sans-serif ; /*--Police ne fonctionne toujours pas--*/
 }
 
 a {
@@ -25,10 +25,15 @@ a {
  }
 
 /*------------HEADER----------------------------*/
+header {
+    margin-left: 1.7%;
+}
+
 .Logo_reservia {
     height: 40px;
+    width: 90%;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 nav li {
@@ -41,8 +46,8 @@ nav a {
 }
 
 nav li a:hover{
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
+    color: rgb(0, 101, 252);
+    border-top: 3px solid rgb(0, 101, 252);
     padding-top: 32px;
 }
 
@@ -50,32 +55,31 @@ nav li a:hover{
     color: rgb(88, 86, 86);
 }
 
-ul :nth-child(3) {
-    font-weight: bold;
+.Inscription {
+    justify-content: flex-end;
+    color: rgb(0, 101, 252);
+    font-weight: bold;              /*---Trouver autre solution---*/
+    padding-right: 25px;
+    margin-top: -43px;
 }
 
 header h1 {
     font-size: 1.7em;
-    margin: 40px 0 10px 20px;
+    margin: 40px 0 10px 0;
 }
 
 #Sous_titre {
     font-size: 1em;
-    margin-left: 20px;
 }
 
 /*--------------Barre de recherche--------------*/
-
-#Recherche {
-   margin-left: 20px;
-}
 
 .fa-map-marker-alt {
     background-color: rgb(242, 242, 242);
     width: 50px;
     height: 34px;
     text-align: center;
-    padding-top: 14px;       /*--Trouver uen meilleure solution pour centrer l'icône*--*/
+    padding-top: 14px;      
     vertical-align: middle;
     border-radius: 10px 0 0 10px;
 }
@@ -90,7 +94,7 @@ input {
 
 #Recherche button {
     width: 100px;
-    height: 47px;
+    height: 46px;
     padding: 0;
     color: white;
     background-color: rgb(0, 101, 252);  
@@ -113,7 +117,7 @@ input {
 }
 
 .Filtres h3 {
-    padding: 0 20px;
+    padding-right: 15px;
 }
 
 .Filtres_allBoutons {
@@ -163,8 +167,11 @@ button span {
 
 /*--------------Filtres------------------------*/
 
+.Info {
+    margin-top: 25px;
+}
+
 .Ico_info {
-    margin-left: 20px;
     width: 20px;
     height: 20px;
     border: rgb(217, 217 , 217) solid 2px;
@@ -178,7 +185,7 @@ button span {
     color: rgb(0, 101, 252);
 }
 
-#Info {
+#Texte_info {
     font-size: 1em;
     margin-top: 4px;
 }
@@ -186,16 +193,13 @@ button span {
 /*------------HEADER----------------------------*/
 
 /*------------SECTION---------------------------*/
-section {
-    flex-wrap: wrap;
-}
 /*------------Hébergements----------------------*/
 
 #Hebergements {
     background-color: rgb(242, 242, 242);
-    width: 880px;
+    width: 63%;
     height: 620px;
-    margin: 20px 0 0 10px;
+    margin: 20px 0 0 1.5%;
     border-radius: 15px;
 }
 
@@ -208,70 +212,46 @@ section {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     height: 450px;
-    padding: 10px 25px 30px 25px;
+    padding: 10px 25px 30px 40px;
 }
 
 #Hebergements_images a {
-    height: 200px;
-    width: 250px;
+    height: 190px;
+    width: 240px;
 }
 
-.Hebergements_image_cannebiere {
-    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
-    background-size: contain;
-}
-
-.Hebergements_image_hotelduport {
-    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
-    background-size: 100% 75%;
-}
-
-.Hebergements_image_lesmouettes {
-    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
-    background-size: 100% 65%;
-}
-
-.Hebergements_image_hoteldelamer {
-    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
-    background-size: 100% 80%;
-}
-
-.Hebergements_image_lepanier {
-    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
-    background-size: contain;
-}
-
-.Hebergements_image_chezamina {
-    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
-    background-size: 100% 90%;
-}
-
-.Size-Border {
+.Hebergements_images-images {
     height: 190px;
     width: 240px;
     border: white solid 4px;
-    border-radius: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.Hebergements_image_description {
+.Hebergements_images-images img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Hebergements_images_description {
     flex-direction: column;
     justify-content: flex-end;
-    height: 70px;
+    height: 68px;
     background-color: white;
-    padding: 0 0 5px 5px;
-    margin-top: 115px;
-    border-radius: 0 0 10px 10px;
-    font-size: 0.9em;
+    padding: 0 4px 10px 5px;
+    margin-top: -3px;
 }
 
 #Hebergements h3 {
     margin: 0 0 10px 5px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
-.Hebergements_image_description p {
+.Hebergements_images_description p {
     margin: 0 0 1px 5px;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .euro {
@@ -306,7 +286,7 @@ section {
 
 #Populaires {
     background-color: rgb(242, 242, 242); 
-    width: 420px;
+    width: 32%;
     height: 620px;
     margin-top: 20px;
     margin-left: 30px;
@@ -328,64 +308,50 @@ section {
 
 .Populaires_images {
     flex-direction: column;
-    align-items: center;
+    margin-left: 50px;
 }
 
 .Populaires_images a {
     height: 140px;
+    width: 340px;
     margin-bottom: 30px;
 }
         
-.Populaires_image_soleildumatin {
-    background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
-    background-size: 190px 140px;
-    height: 140px;
+.Populaires_images-images {
+    height: 145px;
     width: 340px;
+    border: 4px solid white;
+    border-radius: 15px;
     margin-bottom: 30px;
-    border: white solid 4px;
-    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.Populaires_image_chambreshotes {
-    background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
-    background-size: 150px 140px;
-    height: 140px;
-    width: 340px;
-    margin-bottom: 30px;
-    border: white solid 4px;
-    border-radius: 20px;
+.Populaires_images-images img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.Populaires_image_bleuetblanc {
-    background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
-    background-size: 140px 140px;
-    height: 140px;
-    width: 340px;
-    border: white solid 4px;
-    border-radius: 20px;
-}
-
-.Populaires_image_description {
+.Populaires_images_description {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
-    width: 190px;
-    height: 135px;
-    margin-left: 130px;
-    padding: 5px 0 0 20px;
-    border-radius: 0 10px 10px 0;
-    font-size: 0.9em;
+    padding: 10px;
 }
 
-.Populaires_image_description h3, .Populaires_image_description p {
+.Populaires_images_description h3, .Populaires_images_description p {
     width: 150px;
     margin: 0 0 6px 0;
 }
 
-.Populaires_image_description h3 {
-    font-size: 1em;
+.Populaires_images_description h3 {
+    font-size: 0.9em;
 }
 
-.Populaires_image_description p {
-    font-size: 0.9em;
+.Populaires_images_description p {
+    font-size: 0.8em;
 }
 
 .Etoile_populaires {
@@ -398,7 +364,7 @@ section {
 
 #Activites {
     width: 100%;
-    margin-top: 30px;
+    margin: 30px 0 0 1.5%;
 }
 
 #Activites h1 {
@@ -406,108 +372,79 @@ section {
     margin: 0 0 20px 10px;
 }
 
-#Activites_image {
+#Activites_images {
     display: grid;
-    width: 1370px;
     height: 470px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template: repeat(6, 1fr) / repeat(4, 1fr);
 }
 
-#Activites_image a {
+#Activites_images a {
     width: 300px;
 }
 
 #Activites_image_lien-vieuxport {
     grid-column: 1;
-    grid-row: 1 / 2;
+    grid-row: 1 / 6;
     margin-left: 10px;
+    height: 385px;
 }
 
 #Activites_image_lien-fort {
     grid-column: 2;
-    grid-row: 1;
-    height: 240px;
+    grid-row: 1 / 3;
+    height: 180px;
 }
 
 #Activites_image_lien-frioul {
     grid-column: 2;
-    grid-row: 1;
-    margin-top: 270px;
+    grid-row: 4 / 6;
+    height: 105px;
+    padding-top: 45px;
 }
 
 #Activites_image_lien-calanques {
     grid-column: 3;
-    grid-row: 1 / 2;
+    grid-row: 1 / 6;
+    height: 385px;
 }
 
 #Activites_image_lien-notredame {
     grid-column: 4;
-    grid-row: 1;
-    height: 190px;
+    grid-row: 1 / 3;
+    height: 135px;
 }
 
 #Activites_image_lien-longchamp {
     grid-column: 4;
-    grid-row: 1;
-    height: 210px;
-    margin-top: 230px;
+    grid-row: 4 / 6;
+    height: 150px;
+
 }
 
-.Activites_image_vieuxport {
-    background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
-    height: 440px;
+.Activites_images-images {
+    height: 100%;
     width: 300px;
-    background-size: 100% 100%;
-    border-radius: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
 
-.Activites_image_fort {
-    background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
-    height: 240px;
-    width: 300px;
-    background-size: 300px 240px;
-    border-radius: 20px;
+.Activites_images-images img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
-.Activites_image_frioul {
-    background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat;
-    height: 170px;
-    width: 300px;
-    background-size: 300px 170px;
-    border-radius: 20px;
-}
-
-.Activites_image_calanques {
-    background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
-    height: 440px;
-    width: 300px;
-    background-size: 300px 440px;
-    border-radius: 20px;
-}
-
-.Activites_image_notredame {
-    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat;
-    height: 190px;
-    width: 300px;
-    background-size: 300px 190px;
-    border-radius: 20px;
-}
-
-.Activites_image_longchamp {
-    background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
-    height: 210px;
-    width: 300px;
-    background-size: 300px 210px;
-    border-radius: 20px;
-}
-
-.Activites_image_description {
-    height: 55px;
+.Activites_images_description {
+    height: 50px;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    margin: 0;
+}
+
+.Activites_images_description h3 {
     font-size: 1em;
+    padding: 15px 0 0 20px;
+    margin-top: -5px;
 }
 
 
