@@ -45,8 +45,7 @@ nav a {
     font-size: 1em;
 }
 
-nav li a:hover{
-    color: rgb(0, 101, 252);
+nav li a:hover {
     border-top: 3px solid rgb(0, 101, 252);
     padding-top: 32px;
 }
@@ -652,7 +651,118 @@ footer a:hover {
     }
 }
 
-/*--------------Téléphone version---------------*/
+/*--------------Smartphone version---------------*/
 @media only screen and (max-width: 800px) {
+    .Logo-nav {
+        flex-direction: column;
+    }
 
+    .Logo-nav img {
+        height: 50px;
+        width: 115px;
+        margin-bottom: 8px;
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        justify-content: space-around;
+    }
+    
+    nav li a:hover {
+        border-top: none;
+        border-bottom: 3px solid rgb(0, 101, 252);
+        padding-bottom: 10px;
+    }
+
+    .Inscription {
+        margin-right: 30px;
+    }
+
+    header h1 {
+    margin-top: 70px;
+    }
+
+    .Filtres {
+        flex-direction: column;
+    }
+
+    .Filtres_allBoutons {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+    }
+
+    .eco {
+        grid-column: 1;
+        width: 159px;
+    }
+
+    .fam {
+        grid-column: 2;
+        width: 129px;
+    }
+
+    .rom {
+        grid-column: 1;
+        grid-row: 2;
+        width: 156px;
+    }
+
+    .ani {
+        grid-column: 1;
+        grid-row: 3;
+        width: 198px;
+    }
+
+    .Filtres_allBoutons-bouton {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .Info {
+        margin-top: 180px;
+    }
+
+    #Populaires {
+        height: 570px;
+    }
+
+    .Populaires-ico {
+        width: 400px;
+    }
+
+    .Populaires_images {
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .Populaires_images a {
+        margin-bottom: 20px;
+    }
+
+    .Populaires_images-images {
+        width: 370px;
+    }
+
+    #Hebergements {
+        height: 1400px;
+        background-color: white;
+    }
+
+    #Hebergements_images{
+        display: flex;
+        flex-direction: column;
+        height: 1270px;
+        padding-left: 10%;
+    }
+
+    .Hebergements_images-images {
+        height: 190px;
+        width: 350px;
+    }
+
+    
 }
