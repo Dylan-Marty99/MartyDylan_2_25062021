@@ -568,9 +568,91 @@ footer a:hover {
         width: 200px;
         margin-right: 110px;
     }
-
 }
 
+/*--------------Tablette version-----------------*/
 @media only screen and (max-width: 1024px) {
-    
+    .Filtres h3 {
+        padding-right: 0;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    .Inscription {
+        margin-left: 0;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    #Populaires {
+        width: 100%;
+        height: 270px;
+        margin: 10px 0;
+    }
+
+    .Populaires-ico {
+        width: 300px;
+    }
+
+    .Populaires_images {
+        flex-direction: row;
+        margin-left: 2.5%;
+    }
+
+    .Populaires_images-images {
+        width: 240px;
+    }
+
+    #Hebergements {
+        order: 2;
+        width: 100%;
+        height: 600px;
+        margin-left: 0;
+    }
+
+    #Hebergements_images {
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        height: 500px;
+        width: 93%;
+        padding-left: 2.5%;
+    }
+
+    #Activites_images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #Activites_images a {
+        height: 150px;
+    }
+
+    #Activites_image_lien-vieuxport {
+        grid-row: 1 / 3;
+        margin-left: 0;
+    }
+
+    #Activites_image_lien-calanques {
+        grid-column: 1;
+        grid-row: 4 / 6;
+    }
+
+    #Activites_image_lien-frioul {
+        padding-top: 0;
+    }
+
+    #Activites_image_lien-notredame ,#Activites_image_lien-longchamp {
+        grid-column: 3;
+    }
+
+    .Footer_contenu {
+        margin: 10px 35px 0 20px;
+    }
+}
+
+/*--------------Téléphone version---------------*/
+@media only screen and (max-width: 800px) {
+
 }
