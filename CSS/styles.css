@@ -29,7 +29,7 @@ header {
     margin-left: 1.7%;
 }
 
-.Logo_reservia {
+.Logo-nav {
     height: 40px;
     width: 90%;
     justify-content: space-between;
@@ -56,11 +56,9 @@ nav li a:hover{
 }
 
 .Inscription {
-    justify-content: flex-end;
+    margin: 35px 0 0 20px;
     color: rgb(0, 101, 252);
-    font-weight: bold;              /*---Trouver autre solution---*/
-    padding-right: 25px;
-    margin-top: -43px;
+    font-weight: bold;             
 }
 
 header h1 {
