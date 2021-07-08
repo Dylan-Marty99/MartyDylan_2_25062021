@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); 
+
 .Flex {
     display: flex;
 }
@@ -5,7 +7,7 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    font-family: 'Raleway', sans-serif ; /*--Police ne fonctionne toujours pas--*/
+    font-family: 'Raleway', sans-serif ;
 }
 
 a {
@@ -589,6 +591,10 @@ footer a:hover {
         margin-left: 0;
     }
 
+    .Filtres_allBoutons-bouton {
+        margin-left: 15px;
+    }
+
     section {
         flex-direction: column;
     }
@@ -682,8 +688,9 @@ footer a:hover {
         width: 600px;
     }
 
-    .Inscription{
-        margin-left: 10px;
+    .Inscription {
+        margin-left: 0;
+        margin-right: 5px;
     }
 
     header h1 {
@@ -831,6 +838,10 @@ footer a:hover {
     }
 
 /*-----------POPULAIRES-----------*/
+    #Populaires {
+        height: 640px;
+    }
+
     .Populaires_images {
         margin-left: 10%;
     }
@@ -928,12 +939,14 @@ footer a:hover {
         grid-column: 1;
         width: 180px;
         padding-right: 27px;
+        margin-left: 10px;
     }
 
     .fam {
         grid-column: 2;
         width: 160px;
         padding-right: 40px;
+        margin-left: 0;
     }
 
     .rom {
@@ -941,13 +954,15 @@ footer a:hover {
         grid-row: 2;
         width: 180px;
         padding-right: 30px;
+        margin-left: 10px;
     }
 
     .ani {
         grid-column: 1;
         grid-row: 3;
-        width: 230px;
+        width: 235px;
         padding-right: 31px;
+        margin-left: 10px;
     }
 
     .Filtres_allBoutons-bouton {
@@ -955,7 +970,6 @@ footer a:hover {
         justify-content: space-between;
         align-items: center;
         font-size: 1.1em;
-        margin-left: 10px;
         margin-bottom: 10px;
     }
 
@@ -965,7 +979,7 @@ footer a:hover {
 
 /*-----------POPULAIRES-----------*/
     #Populaires {
-        height: 570px;
+        height: 630px;
     }
 
     .Populaires-ico {
@@ -983,7 +997,7 @@ footer a:hover {
     }
 
     .Populaires_images-images {
-        width: 420px;
+        width: 380px;
     }
 
 /*-----------HEBERGEMENTS-----------*/
