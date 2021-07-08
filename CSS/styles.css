@@ -606,7 +606,12 @@ footer a:hover {
 
     .Populaires_images {
         flex-direction: row;
-        margin-left: 2.5%;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    .Populaires_images a {
+        width: 240px;
     }
 
     .Populaires_images-images {
@@ -820,6 +825,57 @@ footer a:hover {
 /*--------------Smartphone version---------------*/
 @media only screen and (max-width: 675px) {
 
+    .Inscription {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+/*-----------POPULAIRES-----------*/
+    .Populaires_images {
+        margin-left: 10%;
+    }
+
+    .Populaires_images-images {
+        width: 430px;
+    }
+
+    .Populaires_images_description {
+        padding-left: 20px;
+    }
+
+/*-----------HEBERGEMENTS-----------*/
+    #Hebergements_images {
+        padding-left: 4%;
+    }
+
+    .Hebergements_images-images {
+        height: 190px;
+        width: 235px;
+    }
+
+    .Hebergements_images_description {
+        font-size: 1em;
+        padding-top: 0;
+    }
+
+/*-----------ACTIVITES-----------*/
+    #Activites_images a, .Activites_images-images, .Activites_images-images img {
+        height: 150px;
+        width: 240px;
+    }
+
+    #Calanques {
+        padding-left: 10px;
+    }
+
+/*-----------FOOTER-----------*/
+    footer {
+        height: 210px;
+    }
+
+    .Footer_contenu {
+        margin-right: 15px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -950,6 +1006,10 @@ footer a:hover {
     }
 
 /*-----------ACTIVITES-----------*/
+    #Activites {
+        height: 1350px;
+    }
+
     #Activites_images {
         display: flex;
         flex-direction: column;
