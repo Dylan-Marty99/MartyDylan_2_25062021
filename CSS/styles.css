@@ -97,7 +97,7 @@ input {
     padding: 0;
     color: white;
     background-color: rgb(0, 101, 252);  
-    border: rgb(0, 101, 252) solid 1px;
+    border: rgb(0, 101, 253) solid 1px;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
 }
